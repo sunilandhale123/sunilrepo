@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Tonic</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/ftLogo.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">  
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Owl carosel -->
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <!--range Slider -->
+  <link rel="stylesheet" href="css/asRange.min.css">
+  <!-- custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  .showgrid .btn-primary:active{background-color: #ff3941 !important;}
+  </style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="bgFilter"></div>
+<div class="siteWrapper">
+    <!-- search model -->
+    <div class="modal fade top" id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-frame modal-top" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <div class="modal-body"> 
+                        <div class="md-form mt-0">
+                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        </div>
+                </div>           
+            </div>
+        </div>
+    </div>
+    <!-- // search model -->
+
+    <!-- header Sec -->
+    <header class="headerSec animated fadeIn">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="img/logo.png"></a>
+            </div>
+            <div class="row">               
+                <div class="col-sm-12">
+                    <div class="navIn">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop Page</a></li>
+                            <li>
+                                <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project <i class="fa fa-angle-down" aria-hidden="true"></i></button>                                
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
+                                  <a class="dropdown-item" href="#">consectetur adipiscing</a>
+                                  <a class="dropdown-item" href="#">dolore magna aliqua</a>
+                                  <div class="dropdown-divider">tempor incididunt</div>
+                                  <a class="dropdown-item" href="#">magna aliqua</a>
+                                </div>                                
+                            </li>
+                            <li>
+                                <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages <i class="fa fa-angle-down" aria-hidden="true"></i></button>                                
+                                <div class="dropdown-menu dropdown-primary">
+                                    <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
+                                    <a class="dropdown-item" href="#">consectetur adipiscing</a>
+                                    <a class="dropdown-item" href="#">dolore magna aliqua</a>
+                                    <a class="dropdown-item" href="#">dolore magna aliqua</a>
+                                    <a class="dropdown-item" href="#">dolore magna aliqua</a>
+                                    <a class="dropdown-item" href="#">dolore magna aliqua</a>                                    
+                                </div>                                
+                            </li>
+                            <li><a href="#">Hot Item</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>                    
+                </div>                
+            </div>
+            <div class="topRight">
+                <div class="topRightIn">
+                    <ul class="topRightUl">
+                        <li id="modalActivate" type="button" class="searchModel" data-toggle="modal" data-target="#exampleModalPreview"><img src="img/icon/search.png"></li>
+                        <li>
+                            <img src="img/icon/heart.png">
+                            <div class="topCount">0</div>
+                        </li>
+                        <li><img src="img/icon/setting.png"></li>
+                        <li class="mobileShow"><div class="hammer"><span></span><span></span> <span></span></div></li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+    </header>
+    <!-- // header Sec -->
+    <!-- content Sec -->
+    <div class="contentWrapper">
+        <!-- Banner Sec-->
+        <section class="bannerSec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="bannerIn">
+                            <ul class="breadcrum commonUl">
+                                <li>Home</li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li class="active"><a href="#">Shop Page</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // Banner Sec-->
+        <!-- Product List-->
+        <section class="productListSec">
+            <div class="container">
+                <div class="row">
+                    <!-- filter Sec -->
+                    <div class="col-sm-3 fliterSec">
+                        <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div>
+                        <div class="categories">
+                            <div class="catHeading"><i class="fa fa-bars" aria-hidden="true"></i> All Categories</div>
+                            <div class="catNav">
+                                <ul class="catNavUl">
+                                    <li><a href="#"><img src="img/icon/home.png"> Home </a></li>
+                                    <li><a href="#"><img src="img/icon/man.png"> Men <i class="fa fa-angle-double-right" aria-hidden="true"></i> </a></li>
+                                    <li><a href="#"><img src="img/icon/women.png"> Women <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><img src="img/icon/bag.png"> Bages <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><img src="img/icon/dress.png"> Dresses <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><img src="img/icon/shoes.png"> Footwear <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><img src="img/icon/Jewelery.png"> Jewelery</a></li>
+                                    <li><a href="#"><img src="img/icon/ball.png">Play Item <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><img src="img/icon/watch.png"> Watches</a></li>
+                                    <li><a href="#"><img src="img/icon/game.png"> Games <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><img src="img/icon/kids.png"> Kids Wear <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="moreCategory">
+                                <div class="catHeading"><i class="fa fa-plus" aria-hidden="true"></i> <i class="fa fa-minus" aria-hidden="true"></i> More Categories</div>
+                                <div class="catNav" style="display: none;">
+                                    <ul class="catNavUl">
+                                        <li><a href="#"><img src="img/icon/home.png"> Home </a></li>
+                                        <li><a href="#"><img src="img/icon/man.png"> Men <i class="fa fa-angle-double-right" aria-hidden="true"></i> </a></li>
+                                        <li><a href="#"><img src="img/icon/women.png"> Women <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><img src="img/icon/bag.png"> Bages <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><img src="img/icon/dress.png"> Dresses <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><img src="img/icon/shoes.png"> Footwear <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><img src="img/icon/Jewelery.png"> Jewelery</a></li>
+                                        <li><a href="#"><img src="img/icon/ball.png">Play Item <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><img src="img/icon/watch.png"> Watches</a></li>
+                                        <li><a href="#"><img src="img/icon/game.png"> Games <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><img src="img/icon/kids.png"> Kids Wear <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="categories catalogBox">
+                            <div class="catHeading"><i class="fa fa-list-ul" aria-hidden="true"></i> Catalog</div>
+                            <div class="catlogIN">
+                                <div class="filPrice">
+                                    <div class="catSubHead">Price</div>
+                                    <div class="rangSlider">
+                                        <div class="range-example-2"></div>
+                                    </div>   
+                                    <div class="rangFilterprice">
+                                        <ul class="commonUl">
+                                            <li><div class="rangAmont">$20.00</div></li>
+                                            <li><div class="rangAmont">$20.00</div></li>
+                                            <li><button type="button" class="btn btn-primary">Filter</button></li>
+                                        </ul>
+                                    </div>                             
+                                </div>
+
+                                <div class="size">
+                                    <div class="catSubHead">Size</div>                                     
+                                    <select class="selectpicker">
+                                        <option selected>Chose Size</option>
+                                        <option value="1">12</option>
+                                        <option value="2">14</option>
+                                        <option value="3">16</option>
+                                        <option value="2">18</option>
+                                        <option value="3">20</option>
+                                    </select>                                       
+                                </div>
+
+                                <div class="color">
+                                    <div class="catSubHead">Color</div>                                    
+                                    <select class="selectpicker">
+                                        <option value="1">Chose Color</option>
+                                        <option value="2">Red</option>
+                                        <option value="3">Green</option>
+                                        <option value="2">Blue</option>
+                                        <option value="3">Yellow</option>
+                                    </select>
+                                </div>
+
+                            </div>                            
+                        </div>
+
+                        <div class="hotProducts">
+                            <div class="catHeading">Hot Products <img src="img/icon/hot-icon.png">  </div>
+                            <div class="hotPrList">
+                                <div class="hotPrBox">
+                                    <div class="hotPrImg" style="background: url('img/product-img/imgF.jpg') no-repeat; background-size:cover;">
+
+                                    </div>
+                                    <div class="hotPrDes">
+                                        <div class="htPrHeading">Long-sleeve top</div>
+                                        <div class="htPrPrice">$290 <span>$299</span></div>
+                                        <div class="htRating">
+                                            <div class="rating">
+                                                <span class="empty-stars ratingJ"></span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotPrBox">
+                                    <div class="hotPrImg" style="background: url('img/product-img/imgE.jpg') no-repeat; background-size:cover;">
+
+                                    </div>
+                                    <div class="hotPrDes">
+                                        <div class="htPrHeading">Long-sleeve top</div>
+                                        <div class="htPrPrice">$290 <span>$299</span></div>
+                                        <div class="htRating">
+                                            <div class="rating">
+                                                <span class="empty-stars rating10"></span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- // filter Sec -->
+                    <div class="col-sm-9 listSec">
+                        <div class="productListPara">
+                            <!-- grid Setting -->
+                            <div class="listSetting topListSetting">
+                                <div class="leftGrid">
+                                    <div class="showgrid gridList">
+                                        <ul class="commonUl">
+                                            <li class="mobileShow"><button class="btn btn-primary fliterBTN">Filter <i class="fa fa-list" aria-hidden="true"></i></button></li>
+                                            <li class="textList deskTopShow">View as:</li>
+                                            <li class="gridA active"><button class="btn btn-primary"><i class="fa fa-th-large" aria-hidden="true"></i></button></li>
+                                            <li class="gridB"><button class="btn btn-primary"><i class="fa fa-list" aria-hidden="true"></i></button></li>                                            
+                                        </ul>
+                                    </div>
+                                    <div class="showgrid slectSort">
+                                        <ul class="commonUl">
+                                            <li class="textList">Sort By:</li>
+                                            <li>
+                                                <select class="selectpicker">
+                                                    <option selected>Chose Sort</option>
+                                                    <option value="1">Most Recent</option>
+                                                    <option value="2">lorem Ipsum</option>
+                                                    <option value="3">Dolar ipsum</option>
+                                                    <option value="2">lorem Ipsum</option>
+                                                    <option value="3">Dolar ipsum</option>
+                                                </select>
+                                            </li>                                                                                       
+                                        </ul>
+                                    </div>
+                                    <div class="showgrid showLine">
+                                        <ul class="commonUl">
+                                            <li class="textList">Show:</li>
+                                            <li>
+                                                <select class="selectpicker">
+                                                    <option selected>11</option>
+                                                    <option value="1">12</option>
+                                                    <option value="2">13</option>
+                                                    <option value="3">14</option>
+                                                    <option value="3">15</option>
+                                                </select>                                                                                                
+                                            </li>                                                                                        
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="paginationRight">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                            <a class="page-link disableActive" href="#" aria-label="Previous">
+                                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                            </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                            <a class="page-link active" href="#" aria-label="Next">
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                            </li>
+                                        </ul>
+                                        </nav>
+                                </div>
+                                <div class="clear"></div>                                
+                            </div>
+                            <!-- // grid Setting -->
+                            <div class="productListChild">
+                                <ul class="row">
+                                    <li class="col-sm-4">
+                                        <div class="productBox clear">
+                                            <div class="productImg" style="background: url('img/product-img/imgA.jpg') no-repeat; background-size:cver;"></div>
+                                            <div class="productDeasPara">                                                
+                                                <div class="rating">                                                                                                        
+                                                    <span class="empty-stars rating1"></span>                                                                                                     
+                                                </div>                                                
+                                                <div class="prHeading">Long-sleeeve top | Shirt</div>
+                                                <div class="ratingReview">
+                                                    <ul class="commonUl">
+                                                        <li>
+                                                            <div class="rating">
+                                                                <span class="empty-stars ratingA"></span> 
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="reviews">5 Reviews</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price">$290 <span>@299</span></div>
+                                                <div class="prDeas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                                                <div class="hoverShow">
+                                                    <div class="sizeColor clear">
+                                                        <div class="prSize">
+                                                            <ul class="commonUl">
+                                                                <li>M</li>
+                                                                <li class="active">L</li>
+                                                                <li>XL</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="prColor">
+                                                            <ul class="commonUl">
+                                                                <li><div class="prColorIN colorA"></div></li>
+                                                                <li><div class="prColorIN colorB"></div></li>
+                                                                <li><div class="prColorIN colorC"></div></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cartButton"><button class="btn btn-secondary"><div class="cartIcon"><img src="img/icon/cart.png" class="cartWhite"><img src="img/icon/cart1.png" class="cart-black"></div>Add to cart</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <div class="productBox clear">  
+                                            <div class="productImg" style="background: url('img/product-img/imgB.jpg') no-repeat; background-size:cver;"></div>                                          
+                                            <div class="productDeasPara">
+                                                <div class="rating">
+                                                    <span class="empty-stars rating2"></span> 
+                                                </div>
+                                                <div class="prHeading">Long-sleeeve top | Shirt</div>
+                                                <div class="ratingReview">
+                                                    <ul class="commonUl">
+                                                        <li>
+                                                            <div class="rating">
+                                                                <span class="empty-stars ratingB"></span> 
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="reviews">5 Reviews</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price">$290 <span>$299</span></div>
+                                                <div class="prDeas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                                                <div class="hoverShow">
+                                                    <div class="sizeColor clear">
+                                                        <div class="prSize">
+                                                            <ul class="commonUl">
+                                                                <li>M</li>
+                                                                <li class="active">L</li>
+                                                                <li>XL</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="prColor">
+                                                            <ul class="commonUl">
+                                                                <li><div class="prColorIN colorA"></div></li>
+                                                                <li><div class="prColorIN colorB"></div></li>
+                                                                <li><div class="prColorIN colorC"></div></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cartButton"><button class="btn btn-secondary"><div class="cartIcon"><img src="img/icon/cart.png" class="cartWhite"><img src="img/icon/cart1.png" class="cart-black"></div>Add to cart</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <div class="productBox clear">
+                                            <div class="productImg" style="background: url('img/product-img/imgC.jpg') no-repeat; background-size:cver;"></div>
+                                            <div class="productDeasPara">
+                                                <div class="rating"><span class="empty-stars rating3"></span></div>
+                                                <div class="prHeading">Long-sleeeve top | Shirt</div>
+                                                <div class="ratingReview">
+                                                    <ul class="commonUl">
+                                                        <li>
+                                                            <div class="rating">
+                                                                <span class="empty-stars ratingC"></span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="reviews">5 Reviews</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price">$290 <span>$299</span></div>
+                                                <div class="prDeas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                                                <div class="hoverShow">
+                                                    <div class="sizeColor clear">
+                                                        <div class="prSize">
+                                                            <ul class="commonUl">
+                                                                <li>M</li>
+                                                                <li class="active">L</li>
+                                                                <li>XL</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="prColor">
+                                                            <ul class="commonUl">
+                                                                <li><div class="prColorIN colorA"></div></li>
+                                                                <li><div class="prColorIN colorB"></div></li>
+                                                                <li><div class="prColorIN colorC"></div></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cartButton"><button class="btn btn-secondary"><div class="cartIcon"><img src="img/icon/cart.png" class="cartWhite"><img src="img/icon/cart1.png" class="cart-black"></div>Add to cart</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <div class="productBox clear">
+                                            <div class="productImg" style="background: url('img/product-img/imgD.jpg') no-repeat; background-size:cver;"></div>
+                                            <div class="productDeasPara">
+                                                <div class="rating"><span class="empty-stars rating4"></span></div>
+                                                <div class="prHeading">Long-sleeeve top | Shirt</div>
+                                                <div class="ratingReview">
+                                                    <ul class="commonUl">
+                                                        <li>
+                                                            <div class="rating">
+                                                                <span class="empty-stars ratingD"></span> 
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="reviews">5 Reviews</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price">$290 <span>@299</span></div>
+                                                <div class="prDeas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                                                <div class="hoverShow">
+                                                    <div class="sizeColor clear">
+                                                        <div class="prSize">
+                                                            <ul class="commonUl">
+                                                                <li>M</li>
+                                                                <li class="active">L</li>
+                                                                <li>XL</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="prColor">
+                                                            <ul class="commonUl">
+                                                                <li><div class="prColorIN colorA"></div></li>
+                                                                <li><div class="prColorIN colorB"></div></li>
+                                                                <li><div class="prColorIN colorC"></div></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cartButton"><button class="btn btn-secondary"><div class="cartIcon"><img src="img/icon/cart.png" class="cartWhite"><img src="img/icon/cart1.png" class="cart-black"></div>Add to cart</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <div class="productBox clear">  
+                                                <div class="productImg" style="background: url('img/product-img/imgE.jpg') no-repeat; background-size:cver;"></div>                                          
+                                            <div class="productDeasPara">
+                                                <div class="rating"><span class="empty-stars rating5"></span></div>
+                                                <div class="prHeading">Long-sleeeve top | Shirt</div>
+                                                <div class="ratingReview">
+                                                    <ul class="commonUl">
+                                                        <li>
+                                                            <div class="rating">
+                                                                <span class="empty-stars ratingE"></span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="reviews">5 Reviews</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price">$290 <span>$299</span></div>
+                                                <div class="prDeas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                                                <div class="hoverShow">
+                                                    <div class="sizeColor clear">
+                                                        <div class="prSize">
+                                                            <ul class="commonUl">
+                                                                <li>M</li>
+                                                                <li class="active">L</li>
+                                                                <li>XL</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="prColor">
+                                                            <ul class="commonUl">
+                                                                <li><div class="prColorIN colorA"></div></li>
+                                                                <li><div class="prColorIN colorB"></div></li>
+                                                                <li><div class="prColorIN colorC"></div></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cartButton"><button class="btn btn-secondary"><div class="cartIcon"><img src="img/icon/cart.png" class="cartWhite"><img src="img/icon/cart1.png" class="cart-black"></div>Add to cart</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <div class="productBox clear">
+                                            <div class="productImg" style="background: url('img/product-img/imgJ.jpg') no-repeat; background-size:cver;"></div>
+                                            <div class="productDeasPara">
+                                                <div class="rating"><span class="empty-stars rating6"></span></div>
+                                                <div class="prHeading">Long-sleeeve top | Shirt</div>
+                                                <div class="ratingReview">
+                                                    <ul class="commonUl">
+                                                        <li>
+                                                            <div class="rating">
+                                                                <span class="empty-stars ratingF"></span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="reviews">5 Reviews</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price">$290 <span>$299</span></div>
+                                                <div class="prDeas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                                                <div class="hoverShow">
+                                                    <div class="sizeColor clear">
+                                                        <div class="prSize">
+                                                            <ul class="commonUl">
+                                                                <li>M</li>
+                                                                <li class="active">L</li>
+                                                                <li>XL</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="prColor">
+                                                            <ul class="commonUl">
+                                                                <li><div class="prColorIN colorA"></div></li>
+                                                                <li><div class="prColorIN colorB"></div></li>
+                                                                <li><div class="prColorIN colorC"></div></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cartButton"><button class="btn btn-secondary"><div class="cartIcon"><img src="img/icon/cart.png" class="cartWhite"><img src="img/icon/cart1.png" class="cart-black"></div>Add to cart</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <div class="productBox clear">
+                                            <div class="productImg" style="background: url('img/product-img/imgF.jpg') no-repeat; background-size:cver;"></div>
+                                            <div class="productDeasPara">
+                                                <div class="rating"><span class="empty-stars rating9"></span></div>
+                                                <div class="prHeading">Long-sleeeve top | Shirt</div>
+                                                <div class="ratingReview">
+                                                    <ul class="commonUl">
+                                                        <li>
+                                                            <div class="rating">
+                                                                <span class="empty-stars ratingJ"></span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="reviews">5 Reviews</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price">$290 <span>@299</span></div>
+                                                <div class="prDeas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                                                <div class="hoverShow">
+                                                    <div class="sizeColor clear">
+                                                        <div class="prSize">
+                                                            <ul class="commonUl">
+                                                                <li>M</li>
+                                                                <li class="active">L</li>
+                                                                <li>XL</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="prColor">
+                                                            <ul class="commonUl">
+                                                                <li><div class="prColorIN colorA"></div></li>
+                                                                <li><div class="prColorIN colorB"></div></li>
+                                                                <li><div class="prColorIN colorC"></div></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cartButton"><button class="btn btn-secondary"><div class="cartIcon"><img src="img/icon/cart.png" class="cartWhite"><img src="img/icon/cart1.png" class="cart-black"></div>Add to cart</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <div class="productBox clear">  
+                                            <div class="productImg" style="background: url('img/product-img/imgG.jpg') no-repeat; background-size:cver;"></div>                                          
+                                            <div class="productDeasPara">
+                                                <div class="rating"><span class="empty-stars rating7"></span></div>
+                                                <div class="prHeading">Long-sleeeve top | Shirt</div>
+                                                <div class="ratingReview">
+                                                    <ul class="commonUl">
+                                                        <li>
+                                                            <div class="rating">
+                                                                <span class="empty-stars ratingG"></span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="reviews">5 Reviews</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price">$290 <span>$299</span></div>
+                                                <div class="prDeas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                                                <div class="hoverShow">
+                                                    <div class="sizeColor clear">
+                                                        <div class="prSize">
+                                                            <ul class="commonUl">
+                                                                <li>M</li>
+                                                                <li class="active">L</li>
+                                                                <li>XL</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="prColor">
+                                                            <ul class="commonUl">
+                                                                <li><div class="prColorIN colorA"></div></li>
+                                                                <li><div class="prColorIN colorB"></div></li>
+                                                                <li><div class="prColorIN colorC"></div></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cartButton"><button class="btn btn-secondary"><div class="cartIcon"><img src="img/icon/cart.png" class="cartWhite"><img src="img/icon/cart1.png" class="cart-black"></div>Add to cart</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <div class="productBox clear">
+                                            <div class="productImg" style="background: url('img/product-img/imgH.jpg') no-repeat; background-size:cver;"></div>
+                                            <div class="productDeasPara">
+                                                <div class="rating"><span class="empty-stars rating8"></span></div>
+                                                <div class="prHeading">Long-sleeeve top | Shirt</div>
+                                                <div class="ratingReview">
+                                                    <ul class="commonUl">
+                                                        <li>
+                                                            <div class="rating">
+                                                                    <span class="empty-stars ratingH"></span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="reviews">5 Reviews</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price">$290 <span>$299</span></div>
+                                                <div class="prDeas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                                                <div class="hoverShow">
+                                                    <div class="sizeColor clear">
+                                                        <div class="prSize">
+                                                            <ul class="commonUl">
+                                                                <li>M</li>
+                                                                <li class="active">L</li>
+                                                                <li>XL</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="prColor">
+                                                            <ul class="commonUl">
+                                                                <li><div class="prColorIN colorA"></div></li>
+                                                                <li><div class="prColorIN colorB"></div></li>
+                                                                <li><div class="prColorIN colorC"></div></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cartButton"><button class="btn btn-secondary"><div class="cartIcon"><img src="img/icon/cart.png" class="cartWhite"><img src="img/icon/cart1.png" class="cart-black"></div>Add to cart</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- grid Setting -->
+                            <div class="listSetting bottomListSetting">
+                                    <div class="leftGrid">
+                                        <div class="showgrid gridList">
+                                            <ul class="commonUl">
+                                                <li class="textList">View as:</li>
+                                                <li class="gridA active"><button class="btn btn-primary"><i class="fa fa-th-large" aria-hidden="true"></i></button></li>
+                                                <li class="gridB"><button class="btn btn-primary"><i class="fa fa-list" aria-hidden="true"></i></button></li>                                            
+                                            </ul>
+                                        </div>
+                                        <div class="showgrid slectSort">
+                                            <ul class="commonUl">
+                                                <li class="textList">Sort By:</li>
+                                                <li>
+                                                    <select class="selectpicker">
+                                                        <option selected>Chose Sort</option>
+                                                        <option value="1">Most Recent</option>
+                                                        <option value="2">lorem Ipsum</option>
+                                                        <option value="3">Dolar ipsum</option>
+                                                        <option value="2">lorem Ipsum</option>
+                                                        <option value="3">Dolar ipsum</option>
+                                                    </select>
+                                                </li>                                                                                       
+                                            </ul>
+                                        </div>
+                                        <div class="showgrid showLine">
+                                            <ul class="commonUl">
+                                                <li class="textList">Show:</li>
+                                                <li>
+                                                    <select class="selectpicker">
+                                                        <option selected>11</option>
+                                                        <option value="1">12</option>
+                                                        <option value="2">13</option>
+                                                        <option value="3">14</option>
+                                                        <option value="3">15</option>
+                                                    </select>                                                                                                
+                                                </li>                                                                                        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="paginationRight">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                <a class="page-link disableActive" href="#" aria-label="Previous">
+                                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                                </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                <a class="page-link active" href="#" aria-label="Next">
+                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                </a>
+                                                </li>
+                                            </ul>
+                                            </nav>
+                                    </div>
+                                    <div class="clear"></div>                                
+                            </div>
+                                <!-- // grid Setting -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // Product List-->
+        <!-- logo Sec -->
+        <section class="logoSec">
+            <div class="container">
+                <div class="row">
+                    <!-- filter Sec -->
+                    <div class="col-sm-12">
+                        <div>
+                            <div class="owl-carousel owl-theme">
+                                <div class="item"><div class="brandLogoIn"><img src="img/brand-logo/brandlogo_1.png"></div></div>
+                                <div class="item"><div class="brandLogoIn"><img src="img/brand-logo/brandlogo_2.png"></div></div>
+                                <div class="item"><div class="brandLogoIn"><img src="img/brand-logo/brandlogo_3.png"></div></div>
+                                <div class="item"><div class="brandLogoIn"><img src="img/brand-logo/brandlogo_4.png"></div></div>
+                                <div class="item"><div class="brandLogoIn"><img src="img/brand-logo/brandlogo_5.png"></div></div>
+                                <div class="item"><div class="brandLogoIn"><img src="img/brand-logo/brandlogo_6.png"></div></div>
+                                <div class="item"><div class="brandLogoIn"><img src="img/brand-logo/brandlogo_7.png"></div></div>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // logo Sec -->
+    </div>
+    <!-- // content Sec -->
+    <!-- footer Sec -->
+    <footer class="footerSec">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="companyAbout">
+                        <div class="ftLogo">
+                            <div class="ftLogoIn"><a href="#"><img src="img/ftLogo.png"></a></div>
+                            <div class="ftLogoTxt">Fashion <span>Store</span></div>
+                        </div>
+                        <div class="comInfo">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                        <div class="ftContact">
+                            <ul>
+                                <li><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> Mirpur dika,USA,road123 </li>
+                                <li><a href="mailto:rt.maya@one.com"><span><i class="fa fa-envelope" aria-hidden="true"></i></span> rt.maya@one.com</a></li>
+                                <li><a href="tel:(+11)987654321"><span><i class="fa fa-phone" aria-hidden="true"></i></span>  (+11)987654321</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="ftLinks">
+                        <ul class="row">
+                            <li class="col-sm-6">
+                                <h5>cusom service</h5>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Delevery Information</a></li>
+                                    <li><a href="#">Information</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-6">
+                                <h5>My Account</h5>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Delevery Information</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="ftBox">
+                        <div class="socialLink">
+                            <h5>Follow Us</h5>
+                            <ul class="socialLinkIcon commonUl">
+                                <li><a href="#"><img src="img/icon/facebook.png"></a></li>
+                                <li><a href="#"><img src="img/icon/twitter.png"></a></li>
+                                <li><a href="#"><img src="img/icon/printrest.png"></a></li>
+                                <li><a href="#"><img src="img/icon/youTube.png"></a></li>
+                                <li><a href="#"><img src="img/icon/twitter.png"></a></li>
+                            </ul>
+                        </div>                                               
+                    </div>
+                    <div class="paypalBox commonUl">
+                        <ul class="commonUl">
+                            <li><a href="#"><img src="img/payment/payment1.png"></a></li>
+                            <li><a href="#"><img src="img/payment/payment2.png"></a></li>
+                            <li><a href="#"><img src="img/payment/payment3.png"></a></li>
+                            <li><a href="#"><img src="img/payment/payment4.png"></a></li>
+                            <li><a href="#"><img src="img/payment/payment5.png"></a></li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="col-sm-12 copyRight">
+                    © 2020 <span>@24webpro</span> All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- // footer Sec -->
+    
+</div>
+
+
+
+  <!-- Start your project here-->  
+  <!-- <div style="height: 100vh">
+    <div class="flex-center flex-column">
+      <h1 class="text-hide animated fadeIn mb-4" style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">MDBootstrap</h1>
+      <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+      <p class="animated fadeIn text-muted">MDB Team</p>
+    </div>
+  </div> -->
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.0.min.js"></script>
+  
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- owl carousel -->
+  <script type="text/javascript" src="js/owl.carousel.js"></script>
+  <!-- Range Slider -->
+  <script type="text/javascript" src="js/jquery-asRange.min.js"></script>
+  <!-- Rating -->
+  <script src="js/addons/rating.min.js"></script>
+  <!-- Your custom scripts -->
+  <script src='js/custom.js'></script>
+  <script type="text/javascript">
+    
+
+    
+  </script>
+
+</body>
+</html>
