@@ -140,6 +140,7 @@ ul, ol								{margin:0; padding:0; list-style:none;}
 .listSetting .leftGrid .custom-select{background: #fff url(../img/icon/selectDrop.png) no-repeat 90% 13px;}
 .showLine .custom-select			{background: #fff url(../img/icon/selectDrop.png) no-repeat 80% 13px !important;}
 .showgrid li						{vertical-align: middle;}
+.leftIcon							{color: #555 !important; float: left !important; width: 25px; margin-top: 2px;}
 .showgrid .btn-primary				{padding: 5px 10px 2px 10px; margin: 0px; font-size: 16px; border: solid 1px #e8e8e8; color: #222; background: #fff !important; border-radius: 4px; box-shadow: none;}
 .leftGrid .custom-select			{border-color: #e8e8e8; border-radius: 3px; height: 32px; background: #fff url(../img/icon/downArrow.png) no-repeat 90% 14px;}
 .showgrid .btn-primary:not([disabled]):not(.disabled):active, .btn-primary:not([disabled]):not(.disabled).active, .show>.btn-primary.dropdown-toggle{background-color: #ff3941 !important; border-color:#ff3941 !important; }
