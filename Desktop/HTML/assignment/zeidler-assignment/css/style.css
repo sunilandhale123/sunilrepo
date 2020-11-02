@@ -86,7 +86,7 @@ ul, ol								{margin:0; padding:0; list-style:none;}
 .categories                         {font-family: 'Open Sans', sans-serif; border-radius: 8px; margin-bottom: 45px; border:solid 1px #e8e8e8;}
 .catHeading                         {font-size: 20px; font-family: 'Poppins', sans-serif; padding: 25px 17px; border-bottom: solid 1px #e8e8e8; margin-bottom: 18px; font-weight: 700; }
 .catHeading .fa                     {margin-right: 12px;}
-.catNavUl > li > a                  {display: block; padding: 12px 15px; line-height:1.3; color:#555555; font-weight: 600; font-size: 13px;}
+.catNavUl > li > a                  {display: block; text-transform: capitalize; padding: 12px 15px; line-height:1.3; color:#555555; font-weight: 600; font-size: 13px;}
 .catNavUl > li > a:hover			{color: #ff3941;}
 .catNavUl > li > a:hover .fa		{color: #ff3941;}
 .catNavUl > li > a img              {float: left; margin-right: 10px;}
@@ -358,6 +358,7 @@ ul, ol								{margin:0; padding:0; list-style:none;}
 .showMenu .hammer span				{background: #ff3941;}
 .hammer:hover span					{background: #fc484e;}
 .navIn .dropdown-menu.show			{width: 100%; border-radius: 4px; left: 4px !important;}
+.topListSetting						{background: #eef0f1; padding: 5px 15px; border-radius: 2px; width: 110%; margin-left: -15px;}
 .col-sm-3.fliterSec					{position: fixed; left: -270px; overflow-y: scroll; width: 260px; height: 100%; background: #fff; display: block; top: 0; z-index: 11; padding: 0; border-radius: 0px; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%;}
 .showFilter .col-sm-3.fliterSec		{left:0px; transition: all .5s ease;}
 .showFilter .bgFilter				{display: block;}
