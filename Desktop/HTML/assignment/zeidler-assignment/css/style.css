@@ -310,13 +310,6 @@ ul, ol								{margin:0; padding:0; list-style:none;}
 
 }
 
-@media (max-width: 850px) 			{
-
-.productListChild .col-sm-4			{-ms-flex: 0 0 49.333333%; flex: 0 0 49.333333%; max-width: 49.333333%;}
-
-}
-
-
 @media (max-width: 768px) 			{
 
 .mobileShow							{display: block !important;}
