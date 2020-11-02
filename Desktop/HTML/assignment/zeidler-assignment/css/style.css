@@ -91,7 +91,7 @@ ul, ol								{margin:0; padding:0; list-style:none;}
 .catNavUl > li > a:hover .fa		{color: #ff3941;}
 .catNavUl > li > a img              {float: left; margin-right: 10px;}
 .catNavUl > li > a .fa              {float: right; color: #bcbcbc;}
-.moreCategory .catHeading           {font-size: 16px; font-family: 'Open Sans', sans-serif; font-weight: 700; border-top: solid 1px #e8e8e8;; border-bottom: none; margin-top: 15px; margin-bottom: 0px; padding: 18px 17px;}
+.moreCategory .catHeading           {font-size: 16px; cursor: pointer; font-family: 'Open Sans', sans-serif; font-weight: 700; border-top: solid 1px #e8e8e8;; border-bottom: none; margin-top: 15px; margin-bottom: 0px; padding: 18px 17px;}
 .moreCategory .catHeading .fa       {margin-right: 3px; font-size: 11px; color: #ff3941; line-height: 0; top: -1px; position: relative;}
 
 .catlogIN .btn-light.dropdown-toggle{color: #888686;}
